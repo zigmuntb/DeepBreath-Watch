@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430BADD825AF8DC400A00542 /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BADD725AF8DC400A00542 /* ComplicationView.swift */; };
+		4321F30A25A9E42100CDCDF9 /* DeepBreath WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4321F30925A9E42100CDCDF9 /* DeepBreath WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4321F30F25A9E42200CDCDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4321F30E25A9E42200CDCDF9 /* Assets.xcassets */; };
+		4321F31625A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4321F31525A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4321F31B25A9E42300CDCDF9 /* DeepBreathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321F31A25A9E42300CDCDF9 /* DeepBreathApp.swift */; };
+		4321F31D25A9E42300CDCDF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321F31C25A9E42300CDCDF9 /* ContentView.swift */; };
+		4321F31F25A9E42300CDCDF9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321F31E25A9E42300CDCDF9 /* NotificationController.swift */; };
+		4321F32125A9E42300CDCDF9 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321F32025A9E42300CDCDF9 /* NotificationView.swift */; };
+		4321F32325A9E42300CDCDF9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321F32225A9E42300CDCDF9 /* ComplicationController.swift */; };
+		4321F32525A9E42300CDCDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4321F32425A9E42300CDCDF9 /* Assets.xcassets */; };
+		4321F32825A9E42300CDCDF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4321F32725A9E42300CDCDF9 /* Preview Assets.xcassets */; };
+		4349B8C425AA5E160076597E /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B8C325AA5E160076597E /* PickerView.swift */; };
+		435F088F25AA7626002EED25 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F088E25AA7626002EED25 /* StatisticsView.swift */; };
+		437E94A625ABAA8B000684AA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E94A525ABAA8B000684AA /* DatePickerView.swift */; };
+		43EB7D7B25A9EAF4007CD4D3 /* CirclePercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB7D7A25A9EAF4007CD4D3 /* CirclePercentageView.swift */; };
+		43EB7D8325AA01B1007CD4D3 /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB7D8225AA01B1007CD4D3 /* CalculationModel.swift */; };
+		43EB7D8825AA564A007CD4D3 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB7D8725AA564A007CD4D3 /* OptionsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4321F30B25A9E42100CDCDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4321F2FF25A9E42100CDCDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4321F30825A9E42100CDCDF9;
+			remoteInfo = "DeepBreath WatchKit App";
+		};
+		4321F31725A9E42300CDCDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4321F2FF25A9E42100CDCDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4321F31425A9E42300CDCDF9;
+			remoteInfo = "DeepBreath WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4321F33025A9E42300CDCDF9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4321F31625A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4321F33425A9E42300CDCDF9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4321F30A25A9E42100CDCDF9 /* DeepBreath WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		430BADD725AF8DC400A00542 /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
+		4321F30525A9E42100CDCDF9 /* DeepBreath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepBreath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4321F30925A9E42100CDCDF9 /* DeepBreath WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeepBreath WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4321F30E25A9E42200CDCDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4321F31025A9E42200CDCDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4321F31525A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DeepBreath WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4321F31A25A9E42300CDCDF9 /* DeepBreathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathApp.swift; sourceTree = "<group>"; };
+		4321F31C25A9E42300CDCDF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4321F31E25A9E42300CDCDF9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4321F32025A9E42300CDCDF9 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4321F32225A9E42300CDCDF9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4321F32425A9E42300CDCDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4321F32725A9E42300CDCDF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4321F32925A9E42300CDCDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4321F32A25A9E42300CDCDF9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4349B8C325AA5E160076597E /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		435F088E25AA7626002EED25 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		437E94A525ABAA8B000684AA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		43EB7D7A25A9EAF4007CD4D3 /* CirclePercentageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
+		43EB7D8225AA01B1007CD4D3 /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
+		43EB7D8725AA564A007CD4D3 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4321F31225A9E42300CDCDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430BADD625AF8DB000A00542 /* ComplicationView */ = {
+			isa = PBXGroup;
+			children = (
+				430BADD725AF8DC400A00542 /* ComplicationView.swift */,
+			);
+			path = ComplicationView;
+			sourceTree = "<group>";
+		};
+		4321F2FE25A9E42100CDCDF9 = {
+			isa = PBXGroup;
+			children = (
+				4321F30D25A9E42100CDCDF9 /* DeepBreath WatchKit App */,
+				4321F31925A9E42300CDCDF9 /* DeepBreath WatchKit Extension */,
+				4321F30625A9E42100CDCDF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4321F30625A9E42100CDCDF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4321F30525A9E42100CDCDF9 /* DeepBreath.app */,
+				4321F30925A9E42100CDCDF9 /* DeepBreath WatchKit App.app */,
+				4321F31525A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4321F30D25A9E42100CDCDF9 /* DeepBreath WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4321F30E25A9E42200CDCDF9 /* Assets.xcassets */,
+				4321F31025A9E42200CDCDF9 /* Info.plist */,
+			);
+			path = "DeepBreath WatchKit App";
+			sourceTree = "<group>";
+		};
+		4321F31925A9E42300CDCDF9 /* DeepBreath WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4349B8C225AA5DFD0076597E /* Views */,
+				43EB7D7925A9EAE1007CD4D3 /* CustomViews */,
+				4321F33C25A9E56E00CDCDF9 /* Complication */,
+				4321F33B25A9E52B00CDCDF9 /* Notification */,
+				43EB7D8F25AA5A02007CD4D3 /* Models */,
+				4321F31A25A9E42300CDCDF9 /* DeepBreathApp.swift */,
+				4321F32425A9E42300CDCDF9 /* Assets.xcassets */,
+				4321F32925A9E42300CDCDF9 /* Info.plist */,
+				4321F32A25A9E42300CDCDF9 /* PushNotificationPayload.apns */,
+				4321F32625A9E42300CDCDF9 /* Preview Content */,
+			);
+			path = "DeepBreath WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4321F32625A9E42300CDCDF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4321F32725A9E42300CDCDF9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4321F33B25A9E52B00CDCDF9 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				4321F31E25A9E42300CDCDF9 /* NotificationController.swift */,
+				4321F32025A9E42300CDCDF9 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		4321F33C25A9E56E00CDCDF9 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				4321F32225A9E42300CDCDF9 /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		4349B8C225AA5DFD0076597E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				430BADD625AF8DB000A00542 /* ComplicationView */,
+				435F088E25AA7626002EED25 /* StatisticsView.swift */,
+				4321F31C25A9E42300CDCDF9 /* ContentView.swift */,
+				43EB7D8725AA564A007CD4D3 /* OptionsView.swift */,
+				4349B8C325AA5E160076597E /* PickerView.swift */,
+				437E94A525ABAA8B000684AA /* DatePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43EB7D7925A9EAE1007CD4D3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				43EB7D7A25A9EAF4007CD4D3 /* CirclePercentageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		43EB7D8F25AA5A02007CD4D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43EB7D8225AA01B1007CD4D3 /* CalculationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4321F30425A9E42100CDCDF9 /* DeepBreath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4321F33525A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath" */;
+			buildPhases = (
+				4321F30325A9E42100CDCDF9 /* Resources */,
+				4321F33425A9E42300CDCDF9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4321F30C25A9E42100CDCDF9 /* PBXTargetDependency */,
+			);
+			name = DeepBreath;
+			productName = DeepBreath;
+			productReference = 4321F30525A9E42100CDCDF9 /* DeepBreath.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		4321F30825A9E42100CDCDF9 /* DeepBreath WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4321F33125A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath WatchKit App" */;
+			buildPhases = (
+				4321F30725A9E42100CDCDF9 /* Resources */,
+				4321F33025A9E42300CDCDF9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4321F31825A9E42300CDCDF9 /* PBXTargetDependency */,
+			);
+			name = "DeepBreath WatchKit App";
+			productName = "DeepBreath WatchKit App";
+			productReference = 4321F30925A9E42100CDCDF9 /* DeepBreath WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4321F31425A9E42300CDCDF9 /* DeepBreath WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4321F32D25A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath WatchKit Extension" */;
+			buildPhases = (
+				4321F31125A9E42300CDCDF9 /* Sources */,
+				4321F31225A9E42300CDCDF9 /* Frameworks */,
+				4321F31325A9E42300CDCDF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeepBreath WatchKit Extension";
+			productName = "DeepBreath WatchKit Extension";
+			productReference = 4321F31525A9E42300CDCDF9 /* DeepBreath WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4321F2FF25A9E42100CDCDF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4321F30425A9E42100CDCDF9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					4321F30825A9E42100CDCDF9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					4321F31425A9E42300CDCDF9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 4321F30225A9E42100CDCDF9 /* Build configuration list for PBXProject "DeepBreath" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4321F2FE25A9E42100CDCDF9;
+			productRefGroup = 4321F30625A9E42100CDCDF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4321F30425A9E42100CDCDF9 /* DeepBreath */,
+				4321F30825A9E42100CDCDF9 /* DeepBreath WatchKit App */,
+				4321F31425A9E42300CDCDF9 /* DeepBreath WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4321F30325A9E42100CDCDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4321F30725A9E42100CDCDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4321F30F25A9E42200CDCDF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4321F31325A9E42300CDCDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4321F32825A9E42300CDCDF9 /* Preview Assets.xcassets in Resources */,
+				4321F32525A9E42300CDCDF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4321F31125A9E42300CDCDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4321F31F25A9E42300CDCDF9 /* NotificationController.swift in Sources */,
+				435F088F25AA7626002EED25 /* StatisticsView.swift in Sources */,
+				430BADD825AF8DC400A00542 /* ComplicationView.swift in Sources */,
+				4321F31D25A9E42300CDCDF9 /* ContentView.swift in Sources */,
+				437E94A625ABAA8B000684AA /* DatePickerView.swift in Sources */,
+				4349B8C425AA5E160076597E /* PickerView.swift in Sources */,
+				43EB7D8325AA01B1007CD4D3 /* CalculationModel.swift in Sources */,
+				43EB7D8825AA564A007CD4D3 /* OptionsView.swift in Sources */,
+				43EB7D7B25A9EAF4007CD4D3 /* CirclePercentageView.swift in Sources */,
+				4321F32325A9E42300CDCDF9 /* ComplicationController.swift in Sources */,
+				4321F31B25A9E42300CDCDF9 /* DeepBreathApp.swift in Sources */,
+				4321F32125A9E42300CDCDF9 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4321F30C25A9E42100CDCDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4321F30825A9E42100CDCDF9 /* DeepBreath WatchKit App */;
+			targetProxy = 4321F30B25A9E42100CDCDF9 /* PBXContainerItemProxy */;
+		};
+		4321F31825A9E42300CDCDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4321F31425A9E42300CDCDF9 /* DeepBreath WatchKit Extension */;
+			targetProxy = 4321F31725A9E42300CDCDF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4321F32B25A9E42300CDCDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4321F32C25A9E42300CDCDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4321F32E25A9E42300CDCDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepBreath WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DeepBreath WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		4321F32F25A9E42300CDCDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepBreath WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DeepBreath WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		4321F33225A9E42300CDCDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				IBSC_MODULE = DeepBreath_WatchKit_Extension;
+				INFOPLIST_FILE = "DeepBreath WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		4321F33325A9E42300CDCDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				IBSC_MODULE = DeepBreath_WatchKit_Extension;
+				INFOPLIST_FILE = "DeepBreath WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		4321F33625A9E42300CDCDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4321F33725A9E42300CDCDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.DeepBreath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4321F30225A9E42100CDCDF9 /* Build configuration list for PBXProject "DeepBreath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4321F32B25A9E42300CDCDF9 /* Debug */,
+				4321F32C25A9E42300CDCDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4321F32D25A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4321F32E25A9E42300CDCDF9 /* Debug */,
+				4321F32F25A9E42300CDCDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4321F33125A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4321F33225A9E42300CDCDF9 /* Debug */,
+				4321F33325A9E42300CDCDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4321F33525A9E42300CDCDF9 /* Build configuration list for PBXNativeTarget "DeepBreath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4321F33625A9E42300CDCDF9 /* Debug */,
+				4321F33725A9E42300CDCDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4321F2FF25A9E42100CDCDF9 /* Project object */;
+}
