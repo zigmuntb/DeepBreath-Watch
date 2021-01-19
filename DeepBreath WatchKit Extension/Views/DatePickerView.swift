@@ -46,10 +46,9 @@ struct DatePickerView: View {
     private func setNotification() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         
-        // FIRST NOTIFICATION
+        // First NOTIFICATION
         let content = UNMutableNotificationContent()
-        content.title = "20 minutes! Congratulations!"
-        content.subtitle = "Your heart rate and blood pressure decreased and blood circulation started improving."
+        content.title = "Heart rate drops to normal!"
         content.sound = .default
         
         // show this notification 20 minutes from now
@@ -62,18 +61,30 @@ struct DatePickerView: View {
         
         // Second NOTIFICATION
         let content1 = UNMutableNotificationContent()
-        content1.title = "8 hours! Congratulations!"
-        content1.subtitle = "Nicotine levels in your bloodstream decreased by over 93%."
+        content1.title = "Blood pressure and pulse returns to normal!"
         content1.sound = .default
         
-        // show this notification 8 hours from now
-        let trigger1 = UNTimeIntervalNotificationTrigger(timeInterval: 28800, repeats: false)
+        // show this notification 20 minutes from now
+        let trigger1 = UNTimeIntervalNotificationTrigger(timeInterval: 1210, repeats: false)
         
         // choose a random identifier
         let request1 = UNNotificationRequest(identifier: UUID().uuidString, content: content1, trigger: trigger1)
         
-        // add our notification request
         UNUserNotificationCenter.current().add(request1)
+        
+        // Third NOTIFICATION
+        let content2 = UNMutableNotificationContent()
+        content2.title = "Nicotine levels decreased by over 93%!"
+        content2.sound = .default
+        
+        // show this notification 8 hours from now
+        let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: 28800, repeats: false)
+        
+        // choose a random identifier
+        let request2 = UNNotificationRequest(identifier: UUID().uuidString, content: content2, trigger: trigger2)
+        
+        // add our notification request
+        UNUserNotificationCenter.current().add(request2)
     }
     
     private func updateModel() {

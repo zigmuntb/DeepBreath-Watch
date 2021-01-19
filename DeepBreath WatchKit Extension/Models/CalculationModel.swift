@@ -18,7 +18,7 @@ class CalculationModel: ObservableObject {
     var percentages: [Double] = []
     let timeMilestonesInMinutes: [Double] = [20, 20, 380, 480, 1140, 2880, 2880, 4320, 10080, 20160, 43200, 259200, 518400]
     let optionsNames: [String] = ["Cigarettes/Day", "Cigarettes/Pack", "Price/Pack"]
-    let titlesForMilestones: [String] = ["Heart rate", "Blood pressure/Pulse", "Oxygen levels", "Nicotine level", "Risk of heart attack", "Senses", "Nicotine free", "Breathing", "Important milestone", "Psychological effects", "Energy levels", "Cough", "One Year!"]
+    let titlesForMilestones: [String] = ["Heart rate", "Blood pressure/Pulse", "Nicotine level", "Oxygen levels", "Risk of heart attack", "Senses", "Nicotine free", "Breathing", "Important milestone", "Psychological effects", "Energy levels", "Cough", "One Year!"]
     var price: Int = 10
     var cigarettesDay: Int = 11
     var cigarettesInPack: Int = 12
@@ -106,7 +106,6 @@ class CalculationModel: ObservableObject {
         setupMilestones()
     }
     
-    // Maybe make one function to calculate all milestones
     func calculateTimeDifference() -> String {
         let dateStr = "2016-05-27 17:33:43+0400"
         

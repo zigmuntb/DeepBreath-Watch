@@ -18,6 +18,7 @@ struct OptionsView: View {
                 Section(header: Text("Date of quitting")) {
                     NavigationLink(destination: DatePickerView()) {
                         Text("\(date)")
+                            .font(.headline)
                     }.onReceive(options.$date, perform: { _ in
                         formatDate()
                     })
@@ -27,6 +28,7 @@ struct OptionsView: View {
                         NavigationLink(destination: PickerView(value: model.number, title: model.name)) {
                             VStack {
                                 Text("\(model.name) - \(model.number)")
+                                    .font(.headline)
                             }
                         }
                     }

@@ -11,28 +11,30 @@ struct StatisticsView: View {
     @EnvironmentObject var statistics: CalculationModel
     
     var body: some View {
-        List(statistics.statistics, id: \.id) { item in
-            Spacer()
-            VStack(alignment: .center) {
-                Text(item.name)
-                    .scaledToFit()
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .minimumScaleFactor(0.01)
-                if item.name == "Money Saved" {
-                    Text(String(format: "%.2f", item.amount))
+        VStack {
+            List(statistics.statistics, id: \.id) { item in
+                Spacer()
+                VStack(alignment: .center) {
+                    Text(item.name)
                         .scaledToFit()
-                        .font(.system(size: 80, weight: .bold, design: .rounded))
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
                         .minimumScaleFactor(0.01)
-                        .gradientForeground(colors: [.blue, .green])
-                } else {
-                    Text("\(Int(item.amount))")
-                        .scaledToFit()
-                        .font(.system(size: 80, weight: .bold, design: .rounded))
-                        .minimumScaleFactor(0.01)
-                        .gradientForeground(colors: [.blue, .green])
+                    if item.name == "Money Saved" {
+                        Text(String(format: "%.2f", item.amount))
+                            .scaledToFit()
+                            .font(.system(size: 80, weight: .bold, design: .rounded))
+                            .minimumScaleFactor(0.01)
+                            .gradientForeground(colors: [.blue, .green])
+                    } else {
+                        Text("\(Int(item.amount.isNaN ? 0 : item.amount))")
+                            .scaledToFit()
+                            .font(.system(size: 80, weight: .bold, design: .rounded))
+                            .minimumScaleFactor(0.01)
+                            .gradientForeground(colors: [.blue, .green])
+                    }
                 }
+                Spacer()
             }
-            Spacer()
         }
     }
 }
@@ -40,6 +42,7 @@ struct StatisticsView: View {
 struct StatisticsView_Previews: PreviewProvider {
     static var previews: some View {
         StatisticsView()
+            .environmentObject(CalculationModel())
     }
 }
 
