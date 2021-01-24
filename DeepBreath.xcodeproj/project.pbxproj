@@ -19,6 +19,7 @@
 		4321F32525A9E42300CDCDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4321F32425A9E42300CDCDF9 /* Assets.xcassets */; };
 		4321F32825A9E42300CDCDF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4321F32725A9E42300CDCDF9 /* Preview Assets.xcassets */; };
 		4349B8C425AA5E160076597E /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B8C325AA5E160076597E /* PickerView.swift */; };
+		4357C1FE25BA03CA00B0BBF8 /* InitialSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4357C1FD25BA03CA00B0BBF8 /* InitialSetupView.swift */; };
 		435F088F25AA7626002EED25 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F088E25AA7626002EED25 /* StatisticsView.swift */; };
 		437E94A625ABAA8B000684AA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E94A525ABAA8B000684AA /* DatePickerView.swift */; };
 		43EB7D7B25A9EAF4007CD4D3 /* CirclePercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB7D7A25A9EAF4007CD4D3 /* CirclePercentageView.swift */; };
@@ -85,6 +86,7 @@
 		4321F32925A9E42300CDCDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4321F32A25A9E42300CDCDF9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4349B8C325AA5E160076597E /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		4357C1FD25BA03CA00B0BBF8 /* InitialSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSetupView.swift; sourceTree = "<group>"; };
 		435F088E25AA7626002EED25 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		437E94A525ABAA8B000684AA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		43EB7D7A25A9EAF4007CD4D3 /* CirclePercentageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		4349B8C225AA5DFD0076597E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				437DFF1425BC64D500B345EC /* FirstLaunchFlow */,
 				430BADD625AF8DB000A00542 /* ComplicationView */,
 				435F088E25AA7626002EED25 /* StatisticsView.swift */,
 				4321F31C25A9E42300CDCDF9 /* ContentView.swift */,
@@ -192,6 +195,14 @@
 				437E94A525ABAA8B000684AA /* DatePickerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		437DFF1425BC64D500B345EC /* FirstLaunchFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4357C1FD25BA03CA00B0BBF8 /* InitialSetupView.swift */,
+			);
+			path = FirstLaunchFlow;
 			sourceTree = "<group>";
 		};
 		43EB7D7925A9EAE1007CD4D3 /* CustomViews */ = {
@@ -342,6 +353,7 @@
 				4321F31D25A9E42300CDCDF9 /* ContentView.swift in Sources */,
 				437E94A625ABAA8B000684AA /* DatePickerView.swift in Sources */,
 				4349B8C425AA5E160076597E /* PickerView.swift in Sources */,
+				4357C1FE25BA03CA00B0BBF8 /* InitialSetupView.swift in Sources */,
 				43EB7D8325AA01B1007CD4D3 /* CalculationModel.swift in Sources */,
 				43EB7D8825AA564A007CD4D3 /* OptionsView.swift in Sources */,
 				43EB7D7B25A9EAF4007CD4D3 /* CirclePercentageView.swift in Sources */,

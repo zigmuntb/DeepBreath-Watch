@@ -13,6 +13,7 @@ class CalculationModel: ObservableObject {
     @Published var options: [OptionModel] = []
     @Published var date: Date = Date()
     @Published var statistics: [StatisticsModel] = []
+    @Published var isSetupFinished: Bool = false
     
     var milestoneNames: [String] = []
     var percentages: [Double] = []
@@ -46,10 +47,17 @@ class CalculationModel: ObservableObject {
     
     //MARK: - Setup
     private func setupUserDefaults() {
+        registerUserDefaults()
+        isSetupFinished = UserDefaults.standard.bool(forKey: "isSetupFinished")
         date = (UserDefaults.standard.object(forKey: "date") as? Date) ?? Date()
         cigarettesDay = UserDefaults.standard.integer(forKey: optionsNames[0])
         cigarettesInPack = UserDefaults.standard.integer(forKey: optionsNames[1])
         price = UserDefaults.standard.integer(forKey: optionsNames[2])
+    }
+    
+    private func registerUserDefaults() {
+        UserDefaults.standard.register(defaults: ["isSetupFinished" : false])
+        UserDefaults.standard.register(defaults: [optionsNames[2] : 0])
     }
     
     private func setupMilestones() {
