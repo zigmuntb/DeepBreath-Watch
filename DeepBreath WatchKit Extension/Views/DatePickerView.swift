@@ -45,46 +45,22 @@ struct DatePickerView: View {
     
     private func setNotification() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-        
-        // First NOTIFICATION
-        let content = UNMutableNotificationContent()
-        content.title = "Heart rate drops to normal!"
-        content.sound = .default
-        
-        // show this notification 20 minutes from now
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1200, repeats: false)
-        
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        
-        UNUserNotificationCenter.current().add(request)
-        
-        // Second NOTIFICATION
-        let content1 = UNMutableNotificationContent()
-        content1.title = "Blood pressure and pulse returns to normal!"
-        content1.sound = .default
-        
-        // show this notification 20 minutes from now
-        let trigger1 = UNTimeIntervalNotificationTrigger(timeInterval: 1210, repeats: false)
-        
-        // choose a random identifier
-        let request1 = UNNotificationRequest(identifier: UUID().uuidString, content: content1, trigger: trigger1)
-        
-        UNUserNotificationCenter.current().add(request1)
-        
-        // Third NOTIFICATION
-        let content2 = UNMutableNotificationContent()
-        content2.title = "Nicotine levels decreased by over 93%!"
-        content2.sound = .default
-        
-        // show this notification 8 hours from now
-        let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: 28800, repeats: false)
-        
-        // choose a random identifier
-        let request2 = UNNotificationRequest(identifier: UUID().uuidString, content: content2, trigger: trigger2)
-        
-        // add our notification request
-        UNUserNotificationCenter.current().add(request2)
+        if value == 0 {
+            let titles = ["Heart rate drops to normal!",
+                          "Blood pressure and pulse returns to normal!",
+                          "Nicotine levels decreased by over 93%!"]
+            
+            let timeIntervals = [1200, 1210, 28800]
+            
+            for index in 0 ..< titles.count - 1 {
+                let content = UNMutableNotificationContent()
+                content.title = titles[index]
+                content.sound = .default
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timeIntervals[index]), repeats: false)
+                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request)
+            }
+        }
     }
     
     private func updateModel() {
