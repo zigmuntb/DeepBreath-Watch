@@ -56,7 +56,7 @@ struct DatePickerView: View {
         
         let timeIntervals = [1200, 1210, 28800, 28810, 86400, 172800, 172810]
         
-        for index in 0 ..< titles.count - 1 {
+        for index in 0 ..< titles.count {
             if value * 24 * 60 * 60 <= timeIntervals[index] {
                 let content = UNMutableNotificationContent()
                 content.title = titles[index]
