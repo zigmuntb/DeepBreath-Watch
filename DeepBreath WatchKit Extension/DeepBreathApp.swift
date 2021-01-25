@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct DeepBreathApp: App {
     @Environment(\.scenePhase) private var scenePhase
-    @State var isActive : Bool = false
     let calculationModel = CalculationModel()
     
     @SceneBuilder var body: some Scene {

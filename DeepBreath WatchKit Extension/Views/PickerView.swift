@@ -33,6 +33,6 @@ struct PickerView: View {
 
 struct PickerView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerView(value: 43, title: "Test name")
+        PickerView(value: 43, title: "Cigarettes in a day")
     }
 }

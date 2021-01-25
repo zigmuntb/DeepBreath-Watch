@@ -54,14 +54,16 @@ struct DatePickerView: View {
                       "Sense of smell and taste begin to improve",
                       "Your body is nicotine free"]
         
-        let timeIntervals = [1200, 1210, 28800, 28810, 86400, 172800, 172810]
+        let timeIntervals = [1200, 1210, 28800, 28810, 86410, 172810, 172820]
         
         for index in 0 ..< titles.count {
-            if value * 24 * 60 * 60 <= timeIntervals[index] {
+            let valueInSeconds = value * 24 * 60 * 60
+            
+            if valueInSeconds <= timeIntervals[index] {
                 let content = UNMutableNotificationContent()
                 content.title = titles[index]
                 content.sound = .default
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timeIntervals[index]), repeats: false)
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timeIntervals[index] - valueInSeconds), repeats: false)
                 let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
                 UNUserNotificationCenter.current().add(request)
             }
