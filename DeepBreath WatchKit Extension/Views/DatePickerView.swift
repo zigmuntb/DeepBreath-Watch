@@ -45,14 +45,19 @@ struct DatePickerView: View {
     
     private func setNotification() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-        if value == 0 {
-            let titles = ["Heart rate drops to normal!",
-                          "Blood pressure and pulse returns to normal!",
-                          "Nicotine levels decreased by over 93%!"]
-            
-            let timeIntervals = [1200, 1210, 28800]
-            
-            for index in 0 ..< titles.count - 1 {
+        
+        let titles = ["Heart rate drops to normal!",
+                      "Blood pressure and pulse returns to normal!",
+                      "Nicotine levels decreased by over 93%!",
+                      "Oxygen levels increase",
+                      "Risk of heart attack rapidly drops",
+                      "Sense of smell and taste begin to improve",
+                      "Your body is nicotine free"]
+        
+        let timeIntervals = [1200, 1210, 28800, 28810, 86400, 172800, 172810]
+        
+        for index in 0 ..< titles.count - 1 {
+            if value * 24 * 60 * 60 <= timeIntervals[index] {
                 let content = UNMutableNotificationContent()
                 content.title = titles[index]
                 content.sound = .default
